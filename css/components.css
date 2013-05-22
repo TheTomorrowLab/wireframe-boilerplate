@@ -1,0 +1,45 @@
+/* Wireframe components
+   =========================================== */
+.block {
+	color: #fff;
+	background: #231f20; /* designers love this colour */
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	display: block;
+	padding: 3em 1em;
+	margin-bottom: 0.5em;
+}
+
+.block--large {
+	padding: 6em 1em;
+}
+
+.block--square {
+	padding: 6em 1em;
+}
+
+.block--small {
+	padding: 0.25em 1em;
+}
+
+.block--plain {
+	color: #231f20;
+	background: none;
+	padding: 0.25em 0;
+}
+
+.block--box {
+	color: #231f20;
+	background: none;
+	border: 5px solid #231f20;
+	padding: 2em 1em;
+}
+
+.block--large.block--box {
+	padding: 6em 1em;
+}
+
+.block--tall {
+	padding: 3em 1em 25em;
+}
