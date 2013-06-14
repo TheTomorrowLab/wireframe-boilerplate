@@ -58,10 +58,36 @@
 		display: block;
 	}
 
-	.l-section {
+	.l-lap-half {
+		width: 48%;
+		float: left;
+		margin-right: 4%;
+		margin-bottom: 1em;
+	}
+
+	.l-lap-half:nth-of-type(2n+2) {
+		margin-right: 0;
+	}
+
+	.l-lap-half--switch {
+		float: right;
+		margin-right: 0;
+		margin-left: 4%;
+	}
+
+	.l-lap-half--switch:nth-of-type(2n+2) {
+		margin-right: 4%;
+		margin-left: 0;
+	}
+
+	.l-lap-third {
 		width: 32%;
 		float: left;
 		margin-right: 2%
+	}
+
+	.l-lap-third:nth-of-type(3n+3) {
+		margin-right: 0;
 	}
 
 	.l-news {
@@ -70,10 +96,6 @@
 
 	.l-logo {
 		width: 230px;
-	}
-
-	.l-section:nth-of-type(3n+3) {
-		margin-right: 0;
 	}
 	
 	.l-product {
