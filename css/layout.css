@@ -1,0 +1,203 @@
+/* All position, floats, margin, width and display declarations go in here.
+ *
+ * prefix all classnames with `l-` e.g. .l-nav
+ *
+ */
+.l-toggle {
+	display: none;
+}
+
+.l-wrap {
+	margin-left: auto;
+	margin-right: auto;
+	width: 95%;
+	display: block;
+	max-width: 75em;
+}
+
+.l-text {
+	padding-bottom: 1em;
+}
+
+.l-address {
+	padding-bottom: 1em;
+}
+
+.l-logo {
+		width: 60%;
+		margin: 1em 0;
+	}
+
+@media (min-width:20em) {
+	.l-toggle {
+		color: #fff;
+		border: 1px solid #738bc0;
+		display: block;
+		position: absolute;
+		padding: 1em;
+		top: 4em;
+		right: 1em;
+	}
+
+	.l-product {
+		padding: 6em 1em;
+	}
+
+	.l-menu {
+		display: none;
+	}
+} 
+
+
+@media (min-width:30em) {
+	.l-toggle {
+		display: none;
+	}
+
+	.l-menu {
+		display: block;
+	}
+
+	.l-section {
+		width: 32%;
+		float: left;
+		margin-right: 2%
+	}
+
+	.l-news {
+		clear: both;
+	}
+
+	.l-logo {
+		width: 230px;
+	}
+
+	.l-section:nth-of-type(3n+3) {
+		margin-right: 0;
+	}
+	
+	.l-product {
+		padding: 8em 1em;
+	}
+
+	.l-address {
+		width: 50%;
+		display:inline-block;
+	}
+
+	.l-sign-up {
+		width: 100%;
+	}
+
+	.l-sales {
+		width: 49%;
+		display: inline-block;
+		margin-right: 2%;
+	}
+
+	.l-sales:nth-of-type(2n+1) {
+		margin-right: 0;
+	}	
+
+	.l-text {
+		width: 48%;
+		clear: both;
+		float: left;
+	}
+
+	.l-text-beta {
+		width: 48%;
+		margin-left: 4%;
+		float: right;
+		clear: both;
+	}
+
+	.l-detailimage {
+		width: 48%;
+		margin-left: 4%;
+		float: right;
+	}
+
+	.l-detailimage-beta {
+		width: 48%;
+		float: left;
+	}	
+
+	.l-compare {
+		width: 48%;
+		clear: both;
+	}
+
+	.l-form {
+		width: 48%;
+		margin-right: 4%;
+		display: inline-block;
+	}
+
+	.l-form:nth-of-type(2n+1) {
+		margin-right: 0;
+		float: right;
+	}
+}
+	
+
+@media (min-width:45em) {
+
+	.l-logo {
+		float: left;
+	}
+
+	.l-menu {
+		width: 63%;
+		float: right;
+		margin-top: 1em;
+	}
+
+	.l-product {
+		clear: both;
+		padding: 14em 1em;
+	}
+
+	.l-news {
+		width: 66%;
+		float: left;
+	}
+
+	.l-testimonials {
+		width: 32%;
+		float: right;
+	}
+
+	.l-footer {
+		clear: both;
+	}
+
+	.l-sales {
+		width: 49%;
+		display: inline-block;
+		margin-right: 2%;
+	}
+
+	.l-sales:nth-of-type(2n+1) {
+		margin-right: 0;
+	}
+
+	.l-salesgroup {
+		display: inline-block;
+		width: 50%;
+	}
+}
+	
+
+@media (min-width:60em) {
+
+}
+
+
+
+
+
+
+
+
+
