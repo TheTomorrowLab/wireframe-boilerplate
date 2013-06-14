@@ -16,6 +16,16 @@ p {
 	line-height: 1.5em;
 }
 
+.nav__item {
+	display: block;
+}
+
+/**/
+
+.toggler {
+	background: #2b51a6;
+}
+
 .block {
 	color: #fff;
 	background: #2b51a6; 
@@ -69,7 +79,7 @@ p {
 }
 
 .block--nav {
-	padding: 6em 1em;
+	padding: 1em;
 }
 
 .block--line {
@@ -95,6 +105,12 @@ p {
 	}
 	.block--large {
 		padding: 12em 1em;
+	}
+}
+
+@media (min-width:60em) {
+	.nav__item {
+		padding: 0 1em;
 	}
 }
 
