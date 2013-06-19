@@ -189,6 +189,7 @@
 
 /* Content first, navigation second with nav overlaying header at first media declaration, below header at second. Use with nav-sample-3.html for demo
    ========================================================================== */
+
 .l-toggle--close {
 	display: none;
 }
@@ -240,8 +241,66 @@
 }
 
 /* ==========================================================================
+   Media object - Thumbnail on the left, heading and intro on the right.
+   Based on http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/
+   ========================================================================== */
+
+.l-media,
+.l-media__body {
+	overflow: hidden;
+}
+
+.l-media__img-wrap {
+	display: block;
+	margin-bottom: 1em;
+}
+
+.l-media__img {
+	display: block;
+	margin: 0 auto;
+}
+
+@media (min-width:20em) {
+	.l-media__img-wrap {
+		float: left;
+		width: 33%;
+		margin-right: 6%;
+	}
+}
+
+/* ==========================================================================
+   Stretch object ~ an element containing elements that stick to the left and right sides
+   ========================================================================== */
+
+.l-stretch__item {
+	display: block;
+	clear: left;
+}
+
+.l-stretch__left {
+	display: block;
+	clear: left;
+	margin-bottom: 0.5em;
+}
+
+@media (min-width:20em) {
+	.l-stretch {
+		text-align: right;
+	}
+
+	.l-stretch__item {
+		display: inline-block;
+	}
+
+	.l-stretch__left {
+		float: left;
+	}
+}
+
+/* ==========================================================================
    Logo
    ========================================================================== */
+
 .l-logo {
 	width: 100%;
 	max-width: 9.25em;
