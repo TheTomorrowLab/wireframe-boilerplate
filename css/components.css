@@ -1,116 +1,49 @@
-/* Wireframe components
-   =========================================== */
-body {
-	color: #fff;
-	background: #2b51a6;
-}
-
-a {
-	color: #a3cbde;
-	font-size: 0.9em;
-	line-height: 2em;
-	text-decoration: none;
-}
-
-p {
-	line-height: 1.5em;
-}
-
-.nav__item {
-	display: block;
-}
-
-/**/
-
-.toggler {
-	background: #2b51a6;
-}
+/**
+ * Generally all the blocks that make up wireframe components
+ *
+ * Common to all wireframes no matter the theme
+ */
 
 .block {
-	color: #fff;
-	background: #2b51a6; 
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-	border: 1px solid #738bc0;
+	display: block;
 	padding: 3em 1em;
 	margin-bottom: 0.5em;
 }
 
 .block--image {
-	color: #fff;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	border: 1px solid #738bc0;
-	display: block;
-	padding: 3em 1em;
-	margin-bottom: 0.5em;
 	background-image:url("../assets/lines.svg");
-}
-
-.block--large {
-	padding: 6em 1em;
 }
 
 .block--small {
 	padding: 0.25em 1em;
 }
 
-.block--box {
-	background: none;
-	border: 5px solid #738bc0;
-	padding: 2em 1em;
+.block--regular {
+	padding: 1em;
 }
 
 .block--medium {
 	padding: 8em 1em;
 }
 
-.block--large.block--box {
+.block--large {
 	padding: 6em 1em;
 }
 
+.block--box {
+	border: 5px solid #738bc0;
+	padding: 2em 1em;
+}
+
 .block--button {
-	color: #000;
-	background: #dadada;
-	border: 4px solid #000;
 	padding: 1em;
 }
 
-.block--nav {
-	padding: 1em;
-}
-
-.block--line {
-	color: #fff;
-	padding: 1em;
-}
-
-@media (min-width:30em) {
-	.block--nav {
-		padding: 1em 1em;
-	}
-	.block--section {
-		padding: 6em 1em;
-	}
+@media (min-width:40em) {
 	.block--large {
 		padding: 9em 1em;
 	}
 }
-
-@media (min-width:45em) {
-	.block {
-		margin-bottom: 1em;
-	}
-	.block--large {
-		padding: 12em 1em;
-	}
-}
-
-@media (min-width:60em) {
-	.nav__item {
-		padding: 0 1em;
-	}
-}
-

@@ -1,0 +1,22 @@
+/**
+ * BLUEPRINT THEME
+ *
+ * Blue background with white text and light blue lines
+ */
+
+body {
+	color: #fff;
+	background-color: #2b51a6;
+}
+
+a {
+	color: #a3cbde;
+	font-size: 0.9em;
+	line-height: 2em;
+	text-decoration: none;
+}
+
+.block {
+	background-color: #2b51a6;
+	border: 1px solid #738bc0;
+}

@@ -1,61 +1,126 @@
-/* All position, floats, margin, width and display declarations go in here.
+/**
+ * All position, floats, margin, width and display declarations go in here.
  *
  * prefix all classnames with `l-` e.g. .l-nav
- *
  */
-.l-toggle {
+
+/* ==========================================================================
+   Main wrapper
+   ========================================================================== */
+
+.l-wrap {
+	display: block;
+	width: 95%;
+	max-width: 75em;
+	margin: 0 auto;
+}
+
+@media(min-width:60em) {
+	.l-wrap {
+		width: 85%;
+	}
+}
+
+/* ==========================================================================
+   Grid system
+   ========================================================================== */
+/**
+ * Grid items must be wrapped in a container with class l-grid
+ *
+ * The styles in the media query blocks are commonly used
+ * examples. For any others that are required use the formula:
+ *
+ * (fraction * 100) - gutter
+ * where gutter is the negative left margin on .l-grid
+ *
+ * e.g. l-desk-three-fifths is (3/5 * 100) - 2.5
+ */
+
+.l-grid {
+	margin-left: -2.5%;
+}
+
+.l-grid__item {
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 2.5%;
+}
+
+@media(min-width:20em) {
+	.l-hand-half {
+		width: 47.5%;
+	}
+
+	.l-hand-third {
+		width: 30.83333333333333%;
+	}
+
+	.l-hand-quarter {
+		width: 22.5%;
+	}
+}
+
+@media(min-width:40em) {
+	.l-lap-half {
+		width: 47.5%;
+	}
+
+	.l-lap-third {
+		width: 30.83333333333333%;
+	}
+
+	.l-lap-two-thirds {
+		width: 64.166666666667%;
+	}
+
+	.l-lap-quarter {
+		width: 22.5%;
+	}
+}
+
+@media(min-width:60em) {
+	.l-desk-half {
+		width: 47.5%;
+	}
+
+	.l-desk-third {
+		width: 30.83333333333333%;
+	}
+
+	.l-desk-quarter {
+		width: 22.5%;
+	}
+
+	.l-desk-three-quarters {
+		width: 72.5%;
+	}
+}
+
+/* ==========================================================================
+   Navigation examples
+   ========================================================================== */
+/**
+ * Pick one and delete the others
+ */
+
+/* Navigation in header below logo with button to toggle it in and out of view. Use with nav-sample-1.html for demo
+   ========================================================================== */
+
+/*.l-toggle {
 	display: none;
 }
 
-.l-wrap {
-	margin-left: auto;
-	margin-right: auto;
-	width: 95%;
-	display: block;
-	max-width: 75em;
-}
-
-.l-text {
-	padding-bottom: 1em;
-}
-
-.l-address {
-	padding-bottom: 1em;
-}
-
-.l-logo {
-	width: 60%;
-	margin: 1em 0;
-}
-
-
 @media (min-width:20em) {
-	.l-hand-half {
-		float: left;
-		width: 50%;
-		margin-left: 0;
-	}
-
-	.l-hand-half:nth-of-type(2n+1) {
-		clear: left;
-	}
-
 	.l-toggle {
-		color: #fff;
-		border: 1px solid #738bc0;
 		display: block;
 		position: absolute;
 		padding: 1em;
-		top: 4em;
+		top: 1em;
 		right: 1em;
 	}
 
 	.l-toggle--close {
 		z-index: 2;
-	}
-
-	.l-product {
-		padding: 6em 1em;
 	}
 
 	.l-menu {
@@ -69,192 +134,116 @@
 		padding-top: 50em;
 		margin-top: -50em;
 	}
-} 
+}
 
-
-@media (min-width:30em) {
+@media (min-width:40em) {
 	.l-toggle {
 		display: none;
 	}
 
 	.l-menu {
-		display: block;
+		position: static;
 	}
+}*/
 
-	.l-lap-half {
-		width: 48%;
-		float: left;
-		margin-right: 4%;
-		margin-bottom: 1em;
-	}
+/* Navigation in header above logo with button to toggle it in and out of view. Use with nav-sample-2.html for demo
+   ========================================================================== */
 
-	.l-lap-half:nth-of-type(2n+2) {
-		margin-right: 0;
-	}
-
-	.l-lap-half--switch {
-		float: right;
-		margin-right: 0;
-		margin-left: 4%;
-	}
-
-	.l-lap-half--switch:nth-of-type(2n+2) {
-		margin-right: 4%;
-		margin-left: 0;
-	}
-
-	.l-lap-third {
-		width: 32%;
-		float: left;
-		margin-right: 2%
-	}
-
-	.l-lap-third:nth-of-type(2n+1) {
-		clear: none;
-	}
-
-	.l-lap-third:nth-of-type(3n+1) {
-		clear: left;
-	}
-
-	.l-lap-third:nth-of-type(3n+3) {
-		margin-right: 0;
-	}
-
-	.l-news {
-		clear: both;
-	}
-
-	.l-logo {
-		width: 230px;
-	}
-	
-	.l-product {
-		padding: 8em 1em;
-	}
-
-	.l-address {
-		width: 50%;
-		display:inline-block;
-	}
-
-	.l-sign-up {
-		width: 100%;
-	}
-
-	.l-sales {
-		width: 49%;
-		display: inline-block;
-		margin-right: 2%;
-	}
-
-	.l-sales:nth-of-type(2n+1) {
-		margin-right: 0;
-	}	
-
-	.l-text {
-		width: 48%;
-		clear: both;
-		float: left;
-	}
-
-	.l-text-beta {
-		width: 48%;
-		margin-left: 4%;
-		float: right;
-		clear: both;
-	}
-
-	.l-detailimage {
-		width: 48%;
-		margin-left: 4%;
-		float: right;
-	}
-
-	.l-detailimage-beta {
-		width: 48%;
-		float: left;
-	}	
-
-	.l-compare {
-		width: 48%;
-		clear: both;
-	}
-
-	.l-form {
-		width: 48%;
-		margin-right: 4%;
-		display: inline-block;
-	}
-
-	.l-form:nth-of-type(2n+1) {
-		margin-right: 0;
-		float: right;
-	}
+/*.l-toggle {
+	display: none;
 }
-	
 
-@media (min-width:45em) {
-
-	.l-logo {
-		float: left;
-	}
-
-	.l-menu {
-		width: 63%;
+@media (min-width:20em) {
+	.l-toggle {
+		display: block;
 		float: right;
 		margin-top: 1em;
 	}
 
-	.l-product {
-		clear: both;
-		padding: 14em 1em;
+	.l-menu {
+		position: absolute;
+		top: -500%;
+		left: 0;
 	}
 
-	.l-news {
-		width: 66%;
-		float: left;
+	.l-menu:target {
+		position: static;
+		padding-top: 50em;
+		margin-top: -50em;
 	}
 
-	.l-testimonials {
-		width: 32%;
+	.l-menu:target~.l-toggle--open {
+		display: none;
+	}
+}
+
+@media (min-width:40em) {
+	.l-toggle {
+		display: none;
+	}
+
+	.l-menu {
+		position: static;
+	}
+}*/
+
+/* Content first, navigation second with nav overlaying header at first media declaration, below header at second. Use with nav-sample-3.html for demo
+   ========================================================================== */
+.l-toggle--close {
+	display: none;
+}
+
+@media (min-width:20em) {
+	.l-toggle--open {
+		float: right;
+		margin-top: 1em;
+	}
+
+	.l-toggle--close {
+		display: block;
 		float: right;
 	}
 
-	.l-footer {
-		clear: both;
+	.l-menu {
+		position: absolute;
+		left: 2.5%;
+		right: 2.5%;
+		top: -500%;
+		width: 95%;
 	}
 
-	.l-sales {
-		width: 49%;
-		display: inline-block;
-		margin-right: 2%;
-	}
-
-	.l-sales:nth-of-type(2n+1) {
-		margin-right: 0;
-	}
-
-	.l-salesgroup {
-		display: inline-block;
-		width: 50%;
-	}
-}
-	
-
-@media (min-width:60em) {
-	.l-menu__item {
-		width: auto;
-		clear: none !important;
-		margin: 0 1% !important;
+	.l-menu:target {
+		top: 0;
 	}
 }
 
+@media (min-width:40em) {
+	.l-toggle {
+		display: none;
+	}
 
+	.l-menu,
+	.l-menu:target {
+		top: 5.375em; /* This must match the height of header. Flexible media will present a challenge if present e.g. no max-width on logo that applies from this width up */
+	}
 
+	.l-content {
+		margin-top: 5.375em;
+	}
+}
 
+@media(min-width:60em) {
+	.l-menu {
+		width: 85%;
+		left: 7.5%;
+	}
+}
 
-
-
-
-
+/* ==========================================================================
+   Logo
+   ========================================================================== */
+.l-logo {
+	width: 100%;
+	max-width: 9.25em;
+	margin: 1em 0;
+}
