@@ -47,6 +47,10 @@
 }
 
 @media(min-width:20em) {
+	.l-hand-whole {
+		width: 97.5%;
+	}
+	
 	.l-hand-half {
 		width: 47.5%;
 	}
@@ -61,6 +65,10 @@
 }
 
 @media(min-width:40em) {
+	.l-lap-whole {
+		width: 97.5%;
+	}
+	
 	.l-lap-half {
 		width: 47.5%;
 	}
@@ -76,9 +84,17 @@
 	.l-lap-quarter {
 		width: 22.5%;
 	}
+
+	.l-lap-three-quarters {
+		width: 72.5%;
+	}
 }
 
 @media(min-width:60em) {
+	.l-desk-whole {
+		width: 97.5%;
+	}
+
 	.l-desk-half {
 		width: 47.5%;
 	}
@@ -94,6 +110,14 @@
 	.l-desk-three-quarters {
 		width: 72.5%;
 	}
+
+	.l-desk-two-fifths {
+		width: 37.5%;
+	}
+
+	.l-desk-three-fifths {
+		width: 57.5%;
+	}
 }
 
 /* ==========================================================================
@@ -103,10 +127,10 @@
  * Pick one and delete the others
  */
 
-/* Navigation in header below logo with button to toggle it in and out of view. Use with nav-sample-1.html for demo
+/* 1. Navigation in header below logo with button to toggle it in and out of view. Use with nav-sample-1.html for demo
    ========================================================================== */
 
-/*.l-toggle {
+.l-toggle {
 	display: none;
 }
 
@@ -144,12 +168,12 @@
 	.l-menu {
 		position: static;
 	}
-}*/
+}
 
-/* Navigation in header above logo with button to toggle it in and out of view. Use with nav-sample-2.html for demo
+/* 2. Navigation in header above logo with button to toggle it in and out of view. Use with nav-sample-2.html for demo
    ========================================================================== */
 
-/*.l-toggle {
+.l-toggle {
 	display: none;
 }
 
@@ -185,9 +209,9 @@
 	.l-menu {
 		position: static;
 	}
-}*/
+}
 
-/* Content first, navigation second with nav overlaying header at first media declaration, below header at second. Use with nav-sample-3.html for demo
+/* 3. Content first, navigation second with nav overlaying header at first media declaration, below header at second. Use with nav-sample-3.html for demo
    ========================================================================== */
 
 .l-toggle--close {

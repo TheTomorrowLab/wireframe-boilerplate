@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+	<head>
+		<meta charset="utf-8">
+		<title>Wireframe style guide. For internal use only.</title>
+		<link rel="stylesheet" href="css/style.css">
+		<style>
+			header[role=banner],
+			section {
+				margin-bottom: 1.5em;
+			}
+
+			section {
+				border-bottom: 1px dotted #738bc0;
+				padding-bottom: 1em;
+			}
+
+			.styleguide-title {
+				background-color: rgba(255,255,255,.2);
+			}
+		</style>
+	</head>
+
+	<body class="l-wrap">
+		<header class="block" role="banner">
+			<h1 class="page-title">Wireframe Style Guide</h1>
+
+			<p>This page is a summary of all the available components and layouts available. It is intended to be constantly evolving to fit the needs of a boilerplate.</p>
+
+			<p>It is for internal use, as a reference when creating wireframes and is not intended for client viewing.</p>
+		</header>
+
+		<main role="main">
+			<section>
+				<h2 class="section-title styleguide-title">Typography</h2>
+
+				<h1 class="feature-title">Feature title</h1>
+
+				<h2 class="page-title">Page title</h2>
+
+				<h3 class="section-title">Section title</h3>
+
+				<h4 class="subsection-title">Sub-section title</h4>
+
+				<h5 class="minor-title">Minor title</h5>
+
+				<p>Normal body copy.</p>
+			</section>
+
+			<section>
+				<h2 class="section-title styleguide-title">Blocks</h2>
+
+				<div class="block">Regular block</div>
+
+				<div class="block block--small">Small block</div>
+
+				<div class="block block--medium">Medium block</div>
+
+				<div class="block block--large">Large block</div>
+
+				<div class="block block--box">Box block</div>
+
+				<div class="block block--image">Image block</div>
+
+				<div class="block block--large block--video">Video block</div>
+			</section>
+
+			<section>
+				<header>
+					<h2 class="section-title styleguide-title">Grid layouts</h2>
+
+					<p>This list is not exhaustive and is extensible using the formula in /css/layout.css.</p>
+				</header>
+
+				<div class="l-grid">
+					<div class="block l-grid__item l-hand-half l-lap-third l-desk-quarter">
+						item
+					</div><!--
+
+					--><div class="block l-grid__item l-hand-half l-lap-third l-desk-quarter">
+						item
+					</div><!--
+
+					--><div class="block l-grid__item l-hand-half l-lap-third l-desk-quarter">
+						item
+					</div><!--
+					
+					--><div class="block l-grid__item l-hand-half l-lap-third l-desk-quarter">
+						item
+					</div><!--
+
+					--><div class="block l-grid__item l-hand-half l-lap-two-thirds l-desk-three-quarters">
+						item
+					</div><!--
+					
+					--><div class="block l-grid__item l-hand-half l-lap-quarter l-desk-quarter">
+						item
+					</div><!--
+					
+					--><div class="block l-grid__item l-hand-half l-lap-three-quarters l-desk-whole">
+						item
+					</div><!--
+					
+					--><div class="block l-grid__item l-hand-half l-desk-three-fifths">
+						item
+					</div><!--
+					
+					--><div class="block l-grid__item l-hand-half l-desk-two-fifths">
+						item
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<header>
+					<h2 class="section-title styleguide-title">Media object</h2>
+
+					<p>Based on Nicole Sullivan's media object, this is a standardised module that represents one of the most common layouts in web design.</p>
+				</header>
+
+				<div class="block l-media">
+					<div class="l-media__img-wrap">
+						<div class="block block--medium block--image l-media__img">img</div>
+					</div>
+
+					<div class="l-media__body">
+						<h1 class="section-title">Heading</h1>
+
+						<p>Some text to introduce the item. It may possible be quite long with some more words in it.</p>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<header>
+					<h2 class="section-title styleguide-title">Stretch object</h2>
+
+					<p>A module that contains items or rows of items that sit at either side.</p>
+				</header>
+
+				<div class="block l-stretch">
+					<div class="block l-stretch__left">thing</div>
+
+					<div class="block l-stretch__item">item</div>
+				</div>
+			</section>
+		</main>
+	</body>
+</html>
