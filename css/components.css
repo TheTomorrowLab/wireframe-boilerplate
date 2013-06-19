@@ -1,32 +1,52 @@
 /**
- * Generally all the blocks that make up wireframe components
+ * Wireframe components independent of layout
  *
  * Common to all wireframes no matter the theme
  */
+
+/* ==========================================================================
+   Headings
+   ========================================================================== */
+
+.feature-title {
+	font-size: 2em;
+}
+
+.page-title {
+	font-size: 1.5em;
+}
+
+.section-title {
+	font-size: 1.25em;
+}
+
+.subsection-title {
+	font-size: 1em;
+}
+
+.minor-title {
+	font-size: 0.875em;
+}
+
+/* ==========================================================================
+   Generic blocks
+   ========================================================================== */
 
 .block {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	display: block;
-	padding: 3em 1em;
+	padding: 1em;
 	margin-bottom: 0.5em;
-}
-
-.block--image {
-	background-image:url("../assets/lines.svg");
 }
 
 .block--small {
 	padding: 0.25em 1em;
 }
 
-.block--regular {
-	padding: 1em;
-}
-
 .block--medium {
-	padding: 8em 1em;
+	padding: 3em 1em;
 }
 
 .block--large {
@@ -40,6 +60,15 @@
 
 .block--button {
 	padding: 1em;
+}
+
+.block--image {
+	/* see theme styles */
+}
+
+.block--video {
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
 @media (min-width:40em) {

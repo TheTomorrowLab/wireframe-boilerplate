@@ -11,12 +11,17 @@ body {
 
 a {
 	color: #a3cbde;
-	font-size: 0.9em;
-	line-height: 2em;
-	text-decoration: none;
 }
 
 .block {
 	background-color: #2b51a6;
 	border: 1px solid #738bc0;
+}
+
+.block--image {
+	background-image: url("../assets/lines.svg");
+}
+
+.block--video {
+	background-image: url("../assets/play-button.svg");
 }
