@@ -554,10 +554,11 @@ p,
 li,
 td {
 	margin: 0;
-<<<<<<< HEAD
 	line-height: 1.5;
-=======
->>>>>>> e6944fc34bee4c879620d574194f7312f81406ba
+}
+
+p {
+	margin-bottom: 1em;
 }
 
 li {

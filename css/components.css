@@ -54,12 +54,8 @@
 }
 
 .block--box {
-	border: 5px solid #738bc0;
+	/* see theme styles for border */
 	padding: 2em 1em;
-}
-
-.block--button {
-	padding: 1em;
 }
 
 .block--image {
@@ -69,6 +65,7 @@
 .block--video {
 	background-position: center;
 	background-repeat: no-repeat;
+	/* see theme styles for background-image */
 }
 
 @media (min-width:40em) {

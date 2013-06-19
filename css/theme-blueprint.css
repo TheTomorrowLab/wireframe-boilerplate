@@ -18,6 +18,10 @@ a {
 	border: 1px solid #738bc0;
 }
 
+.block--box {
+	border: 5px solid #738bc0;
+}
+
 .block--image {
 	background-image: url("../assets/lines.svg");
 }
