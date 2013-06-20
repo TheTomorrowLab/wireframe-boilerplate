@@ -43,6 +43,7 @@
 .l-grid__item {
 	display: inline-block;
 	vertical-align: top;
+	width: 97.5%;
 	margin-left: 2.5%;
 }
 
